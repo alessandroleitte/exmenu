@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/mediaqueries.css">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
         <h1>História do Botafogo</h1>
 
         <span id="burguer" class="material-symbols-outlined" onclick="openMenu()">menu</span>
-        <menu id="paginas">
+        <menu id="paginas" onresize="mudouTamanho()">
             <ul>
                 <li><a href="../index.html">Começo</a></li>
                 <li><a href="decadas.html">Primeiras decadas</a></li>
@@ -85,6 +86,13 @@
     </p>
 </footer>
 <script>
+    function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                paginas.style.display = 'block'
+            }else{
+                paginas.style.display = 'none'
+            }
+        }
     function openMenu() {
         if (paginas.style.display == 'block'){
             paginas.style.display = 'none'
