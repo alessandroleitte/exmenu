@@ -23,14 +23,14 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    width: 97vw;
+    width: 100vw;
     position: fixed;
 }
 .logo{
     margin: auto;
     width: 100px;
     height: 100px;
-    background-image: url(/imagens/botafogo.png);
+    background-image: url(../imagens/botafogo.png);
     background-size: cover;
 }
 menu{
